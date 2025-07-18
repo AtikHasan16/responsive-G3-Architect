@@ -1,0 +1,119 @@
+/* Common styles area */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.display-flex {
+    display: flex;
+}
+
+
+.btn-primary {
+    font-size: 1.1rem;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: #ffff;
+    padding: 20px 25px;
+
+}
+
+/* all colors */
+
+
+.dark01 {
+    color: #131313;
+}
+
+.dark02 {
+    color: #424242;
+}
+
+.dark03 {
+    color: #727272;
+}
+
+.bg-color {
+    background-color: rgba(255, 144, 14, 0.10);
+}
+
+/* the navbar styles */
+
+
+.nav-link {
+
+    justify-content: space-around;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+
+.navbar {
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+
+}
+
+.nav-logo {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/* the banner section starts from here */
+.banner-content {
+    text-align: center;
+}
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+
+}
+
+.banner img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* the features section starts from here */
+/* the features list section starts from here */
+/* the facts section starts from here */
+/* the sponsors section starts from here */
+/* the footer section starts from here */
+
+/* This the small device section */
+
+@media screen and (max-width:578px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* This the medium device section */
+
+@media screen and (min-width:578px) and (max-width:991px) {}
