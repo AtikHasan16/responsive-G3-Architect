@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+* {
+    margin: 0;
+}
+
 .display-flex {
     display: flex;
 }
@@ -21,6 +25,12 @@
     color: #ffff;
     padding: 20px 25px;
 
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #727272;
 }
 
 /* all colors */
@@ -100,6 +110,48 @@
 }
 
 /* the features section starts from here */
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.features-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.features-img-container>img {
+    width: 340px;
+    height: 340px;
+}
+
+
+.features {
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin: 100px 0;
+}
+
+.features-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.quick-list {
+    font-weight: 500;
+}
+
+.text-features {
+    color: #FF900E;
+}
+
+.features-description {
+    margin: 20px 0;
+}
+
 /* the features list section starts from here */
 /* the facts section starts from here */
 /* the sponsors section starts from here */
@@ -112,8 +164,42 @@
     .navbar {
         flex-direction: column;
     }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px;
+
+    }
+
+    .features-img-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px;
+    }
+
+    .features-text-container {
+        text-align: center;
+    }
 }
 
 /* This the medium device section */
 
-@media screen and (min-width:578px) and (max-width:991px) {}
+@media screen and (min-width:578px) and (max-width:991px) {
+    .header {
+        padding: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px;
+        text-align: center;
+
+    }
+
+    .features-img-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px;
+    }
+
+}
