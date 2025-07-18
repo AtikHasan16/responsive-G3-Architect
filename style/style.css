@@ -153,15 +153,83 @@
 }
 
 /* the features list section starts from here */
+
+.feature-list-container {
+    gap: 150px;
+    margin-bottom: 100px;
+}
+
+.feature-list-card {
+    margin-bottom: 20px;
+    box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+
+}
+
+.feature-list-title {
+    border-left: 4px solid #FF900E;
+    padding: 0 20px;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.feature-list-description {
+    margin: 25px;
+}
+
+
+
+.feature-list-image img {
+    width: 100%;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    margin: -90px -75px;
+
+}
+
+.experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
 /* the facts section starts from here */
 /* the sponsors section starts from here */
+
+.sponsors {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.sponsors-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.sponsors-description {
+    margin-bottom: 20px;
+}
+
+.sponsors-image-container {
+    justify-content: space-around;
+    align-items: center;
+    filter: grayscale(100%);
+}
+
 /* the footer section starts from here */
 
 /* This the small device section */
 
 @media screen and (max-width:578px) {
 
-    .navbar {
+    .navbar,
+    .feature-list-container {
         flex-direction: column;
     }
 
@@ -179,6 +247,24 @@
 
     .features-text-container {
         text-align: center;
+    }
+
+    .feature-list-container {
+        gap: 20px;
+    }
+
+    .feature-list-title {
+        border: none;
+    }
+
+    #experience-badge {
+
+        display: none;
+    }
+
+    .sponsors-image-container {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -202,4 +288,21 @@
         margin: 30px;
     }
 
+    .feature-list-container {
+        flex-direction: column;
+    }
+
+    .feature-list-container {
+        gap: 20px;
+    }
+
+    #experience-badge {
+
+        display: none;
+    }
+
+    .sponsors-image-container {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
